@@ -1,23 +1,10 @@
-from creatio import address, name
+"""Examples how creatio can be used to generate test data"""
 
-def main():
-    print("# Example generated addresses and names from creatio library\n")
+from creatio.address.fi_FI import address
+from creatio.name.fi_FI import name
 
-    print("Home Address (kotiosoite):")
-    print(address.kotiosoite())
-    print()  # Blank line
+print(address.home_address())
+# Mäntykatu 10, 00280 Kokkola
 
-    print("Random First Name:")
-    print(name.first_name())
-    print()
-
-    print("Random Last Name:")
-    print(name.last_name())
-    print()
-
-    print("Random Full Name:")
-    print(name.full_name())
-    print()
-
-if __name__ == "__main__":
-    main()
+print(name.full_name())
+# Tapio Korhonen
