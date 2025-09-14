@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment created by uv
+.venv/
+
+# uv lockfile (if you want to exclude it; optional)
+# uv.lock
+
+# Pytest cache
+.pytest_cache/
+
+# VS Code settings (optional)
+.vscode/
+
+# MacOS metadata
+.DS_Store
+
+# IDE files (optional)
+.idea/
+
+# Test output / logs
+*.log
+
+# Packaging
+dist/
+build/
+*.egg-info/
