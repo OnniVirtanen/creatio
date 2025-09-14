@@ -24,11 +24,11 @@ jobs:
       - name: Install uv (Astral's package manager)
         run: |
           curl -LsSf https://astral.sh/uv/install.sh | sh
-          
+
       - name: Sync dependencies with uv
         run: |
-          uv pip sync
+          uv sync
 
       - name: Run tests with pytest
         run: |
-          uv pip run pytest
+          uv run pytest
