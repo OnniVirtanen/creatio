@@ -1,7 +1,32 @@
-# creatio
+# Creatio
 
-Creatio is an open-source Python library for test data generation.
+**Creatio** is a Python library designed to generate realistic test data for various purposes such as testing, development, and prototyping. It includes localized data generators for names, addresses, and more, with support for different regions and languages.
 
-## Goal
-- Prioritization for finnish locale
-- A library with preferably zero dependencies
+## Features
+- Generate realistic names and addresses
+- Support for localized data generation (e.g., Finnish data with `fi_FI`).
+- Easy to use with simple function calls.
+- Small number of dependencies, easy to audit!
+
+## Installation
+```
+git clone https://github.com/OnniVirtanen/creatio.git
+cd creatio
+pip install . uv
+```
+
+## Usage
+```
+from creatio.address.fi_FI import address
+from creatio.name.fi_FI import name
+
+print(address.home_address())
+# Example output: Mäntykatu 10, 00280 Kokkola
+
+print(name.full_name())
+# Example output: Tapio Korhonen
+
+```
+
+## Supported locales
+- Finnish (fi_FI)
