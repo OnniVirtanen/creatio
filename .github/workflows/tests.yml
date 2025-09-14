@@ -23,9 +23,8 @@ jobs:
 
       - name: Install uv (Astral's package manager)
         run: |
-          curl -Ls https://astral.sh/uv/install.sh | sh
-          echo "$HOME/.cargo/bin" >> $GITHUB_PATH  # Make sure uv is on the PATH
-
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          
       - name: Sync dependencies with uv
         run: |
           uv pip sync
