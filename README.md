@@ -33,3 +33,9 @@ print(occupation.occupation())
 
 ## Supported locales
 - Finnish (fi_FI)
+
+## Unit testing
+Run unit tests
+```
+uv run pytest
+```
