@@ -19,6 +19,7 @@ pip install . uv
 ```
 from creatio.address.fi_FI import address
 from creatio.name.fi_FI import name
+from creatio.occupation.fi_FI import occupation
 
 print(address.home_address())
 # Example output: Mäntykatu 10, 00280 Kokkola
@@ -26,6 +27,8 @@ print(address.home_address())
 print(name.full_name())
 # Example output: Tapio Korhonen
 
+print(occupation.occupation())
+# Example output: Tuotantotyöntekijä
 ```
 
 ## Supported locales
