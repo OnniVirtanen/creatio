@@ -9,14 +9,14 @@
 - Small number of dependencies, easy to audit!
 
 ## Installation
-```
+```bash
 git clone https://github.com/OnniVirtanen/creatio.git
 cd creatio
 pip install . uv
 ```
 
 ## Usage
-```
+```python
 from creatio.address.fi_FI import address
 from creatio.name.fi_FI import name
 from creatio.occupation.fi_FI import occupation
